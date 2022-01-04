@@ -28,6 +28,7 @@ python3 setup.py install --user
 cd ..
 
 # Install pygame for kitbot demo
+sudo apt-get install -y python3-pip
 pip install pygame
 
 # Set up Poll Me Maybe
