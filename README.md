@@ -5,7 +5,7 @@ environment for MASLAB.
 
 Currently, the script handles the following:
 - Installing Git, Python, and an SSH server
-- Installing the full ROS Melodic desktop w/ rospy
+- Installing the full ROS Foxy desktop w/ rospy
 - Setting up Teensy USB rules
 - Setting up TAMProxy host library
 - Setting up Poll Me Maybe
@@ -16,10 +16,10 @@ Currently, the script handles the following:
 Prerequisites:
 - A NUC per team with SSD and RAM installed
 - Git repo set up for each team (normally on MIT Github)
-- USB flash drive with Ubuntu 18.04 install image
+- USB flash drive with Ubuntu 20.04 install image
 
 For each NUC:
-1. Install full Ubuntu 18.04
+1. Install full Ubuntu 20.04
 2. Connect to Wifi network(s)
 3. Download this repo (either through `git clone` or zip distribution)
 4. Run setup script, passing in team number as first argument: `./setup.sh <team-number>`
