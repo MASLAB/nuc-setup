@@ -20,6 +20,7 @@ Prerequisites:
 
 For each NUC:
 1. Install full Ubuntu 20.04
+   - Set username and hostname to `teamX`
 2. Connect to Wifi network(s)
 3. Download this repo (either through `git clone` or zip distribution)
 4. Run setup script, passing in team number as first argument: `./setup.sh <team-number>`
