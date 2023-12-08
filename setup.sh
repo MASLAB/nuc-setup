@@ -10,12 +10,11 @@ sudo apt install -y openssh-server
 sudo apt-key adv --fetch-keys https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc
 sudo apt-add-repository http://packages.ros.org/ros2/ubuntu
 sudo apt update
-sudo apt install -y ros-humble-desktop python3-rosdep
+sudo apt install -y ros-humble-desktop python3-rosdep python3-argcomplete python3-colcon-common-extensions
 sudo rosdep init
 rosdep update
 echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 source ~/.bashrc
-sudo apt install -y python3-colcon-common-extensions
 
 # Set up Teensy USB rules
 wget https://www.pjrc.com/teensy/00-teensy.rules
