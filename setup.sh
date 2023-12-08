@@ -6,16 +6,16 @@ sudo apt install -y git
 # Install SSH
 sudo apt install -y openssh-server
 
-# Set up ROS and dependencies
-sudo apt-key adv --fetch-keys https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc
-sudo apt-add-repository http://packages.ros.org/ros2/ubuntu
+# Set up ROS 2 and dependencies
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo apt update && sudo apt install curl -y
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
-sudo apt install -y ros-foxy-desktop python3-rosdep
-sudo rosdep init
-rosdep update
-echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-sudo apt install -y python3-colcon-common-extensions
+sudo apt upgrade
+sudo apt install ros-humble-desktop
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+souce ~/.bashrc
 
 # Set up Teensy USB rules
 wget https://www.pjrc.com/teensy/00-teensy.rules
