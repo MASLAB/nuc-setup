@@ -16,7 +16,7 @@ Currently, the script handles the following:
 Prerequisites:
 - A NUC per team with SSD and RAM installed
 - Git repo set up for each team (normally on MIT Github)
-- USB flash drive with Ubuntu 20.04 install image
+- USB flash drive with Ubuntu 22.04 install image
 
 For each NUC:
 1. Install full Ubuntu 22.04
@@ -24,7 +24,7 @@ For each NUC:
    - Set username and hostname to `teamX`
 3. Connect to Wifi network(s)
 4. Download this repo (either through `git clone` or zip distribution)
-5. Run setup script, passing in team number as first argument and MASLAB year as second argument:
+5. Run setup script, passing in team number as first argument and MASLAB year as second argument:  
    `./setup.sh <team-number> <maslab-year>`
 7. Copy SSH public key (output of script) and add it as a deploy key to the team repo
    
