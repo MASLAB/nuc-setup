@@ -24,7 +24,8 @@ For each NUC:
    - Set username and hostname to `teamX`
 3. Connect to Wifi network(s)
 4. Download this repo (either through `git clone` or zip distribution)
-5. Run setup script, passing in team number as first argument and MASLAB year as second argument: `./setup.sh <team-number> <maslab-year>`
-6. Copy SSH public key (output of script) and add it as a deploy key to the team repo
+5. Run setup script, passing in team number as first argument and MASLAB year as second argument:
+   `./setup.sh <team-number> <maslab-year>`
+7. Copy SSH public key (output of script) and add it as a deploy key to the team repo
    
 And you're done! Feel free to delete this repo from the NUC.
