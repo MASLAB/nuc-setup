@@ -19,13 +19,12 @@ Prerequisites:
 - USB flash drive with Ubuntu 20.04 install image
 
 For each NUC:
-1. Install full Ubuntu 20.04
+1. Install full Ubuntu 22.04
+   - Minimal installation
    - Set username and hostname to `teamX`
-2. Connect to Wifi network(s)
-3. Download this repo (either through `git clone` or zip distribution)
-4. Run setup script, passing in team number as first argument: `./setup.sh <team-number>`
-5. Copy SSH public key (output of script) and add it as a deploy key to the team
-   repo
-6. Clone team's repository to home directory: `cd ~ && git clone <url>`
-
+3. Connect to Wifi network(s)
+4. Download this repo (either through `git clone` or zip distribution)
+5. Run setup script, passing in team number as first argument and MASLAB year as second argument: `./setup.sh <team-number> <maslab-year>`
+6. Copy SSH public key (output of script) and add it as a deploy key to the team repo
+   
 And you're done! Feel free to delete this repo from the NUC.
