@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Arduino IDE
+Exec=/usr/local/bin/arduino2.AppImage --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=/usr/share/icons/hicolor/512x512/apps/arduino-ide.png
+StartupWMClass=Arduino IDE
+X-AppImage-Version=2.2.1
+Comment=Arduino IDE
+Categories=Development;
