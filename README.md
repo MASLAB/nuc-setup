@@ -5,11 +5,13 @@ environment for MASLAB.
 
 Currently, the script handles the following:
 - Installing Git, Python, and an SSH server
-- Installing the full ROS Foxy desktop w/ rospy
+- Installing the full ROS Humble desktop w/ rospy
 - Setting up Teensy USB rules
+- Setting up Arduino USB rules
 - Setting up TAMProxy host library
 - Setting up Poll Me Maybe
 - Git configuration + generating SSH key
+- Clone `kitbot` and team's MASLAB repo 
 
 ## Setup Steps
 
