@@ -57,4 +57,3 @@ cat ~/.ssh/id_rsa.pub
 read -p "Add SSH to team repository deploy key then press any key to continue... " -n1 -s
 cd ~
 git clone git@github.mit.edu:maslab-$2/team-$1.git
-git clone https://github.com/MASLAB/kitware.git
