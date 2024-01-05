@@ -26,6 +26,7 @@ sudo udevadm control --reload
 # Set up TAMProxy Host library
 git clone https://github.com/MASLAB/TAMProxy-pyHost
 cd TAMProxy-pyHost
+git checkout teensy
 python3 setup.py install --user
 cd ..
 
