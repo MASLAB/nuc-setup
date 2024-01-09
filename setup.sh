@@ -21,6 +21,7 @@ source ~/.bashrc
 # Set up Teensy and Arduino USB rules
 sudo cp 00-teensy.rules /etc/udev/rules.d/
 sudo cp 99-arduino.rules /etc/udev/rules.d/
+sudo cp 01-camera.rules /etc/udev/rules.d/
 sudo udevadm control --reload
 
 # Set up TAMProxy Host library
